@@ -83,6 +83,37 @@ class Search extends AbstractOperation
         return $this;
     }
 
+    
+    
+      /**
+     * Returns the keywords
+     *
+     * @return string
+     */
+    public function getIdType()
+    {
+        return $this->getSingleOperationParameter('idType');
+    }
+
+    /**
+     * Sets the keywords
+     *
+     * @param string $keywords
+     *
+     * @return \ApaiIO\Operations\Search
+     */
+    public function setIdType($idType)
+    {
+        $this->parameters['idType'] = $idType;
+
+        return $this;
+    }
+    
+    
+    
+    
+    
+    
     /**
      * Return the resultpage
      *
